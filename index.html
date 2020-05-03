@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國家公園</title>
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,173 +21,18 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <!-- footer icon 圖 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
 
 
 
 </head>
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    section {
-        margin-bottom: 50px;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-
-    /* -----------------------------------BANNER CSS------------------------------------------- */
-    .banner {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-
-    .bg {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        background-image: url('./img/banner1_2.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-        transition: 0.3s;
-    }
-
-    @media(max-width: 768px) {
-            .bg {
-                /* width: 100%; */
-                height: 80vh;
-            }
-
-            .wave {
-                width: 200px !important;
-                height: 200px !important;
-                top: -100px;
-                left: -200px;
-            }
-
-
-        }
-
-        .wave-position {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /* transition: 0.3s; */
-        }
-
-
-        .wave {
-            position: absolute;
-            /* top: calc((50% - 300px)/2);
-            left: calc((10% - 300px)/2); */
-
-            top: -150px;
-            left: -150px;
-            /* transform: translate(-50%, -50%); */
-            width: 300px;
-            height: 300px;
-            border-radius: 300px;
-            background: url('./img/banner1.jpg');
-            background-attachment: fixed;
-            background-size: cover;
-            box-shadow:   0 50px 50px rgba(199, 199, 199, 0.5);
-            background-position: center;
-            /* z-index: 2; */
-            /* background-size: auto 200%; */
-        }
-
-    /* .banner h1 {
-        color: white;
-        position: absolute;
-        left: 50px;
-        top: 50px;
-
-    }
-
-    .banner h3 {
-        color: white;
-        text-align: center;
-        line-height: 180vh;
-
-    } */
-
-    /* -----------------------------------NAV CSS------------------------------------------- */
-    .logo-top {
-        width: 100px;
-        height: 100px;
-        background-color: tomato;
-
-        text-align: center;
-        line-height: 100px;
-        font-size: 20px;
-    }
-
-    .hamberger {
-        width: 60px;
-        height: 60px;
-        background-image: url('./img/menu.png');
-        background-position: center;
-        background-size: cover;
-    }
-
-    .nav-link {
-        font-size: 20px;
-    }
-
-    @media(max-width: 992px) {
-        .nav-link {
-            text-align: right;
-        }
-
-    }
-
     /* -----------------------------------Taiwan CSS------------------------------------------- */
-    .taiwan {
-        position: relative;
-        background-color: darkseagreen;
-        width: 100%;
-        height: 100vh;
-    }
 
-    .taiwan .taiwanPng {
-        position: absolute;
-        height: 100vh;
-        text-align: start;
-        transform: rotate(15deg);
-    }
 
-    .map-adjust {
-        position: absolute;
-        height: 10%;
-    }
-
-    .taiwan .map-icon1 {
-        top: 150px;
-        left: 650px;
-    }
-
-    .taiwan .map-icon2 {
-        top: 500px;
-        left: 450px;
-    }
-
-    .taiwan .person {
-        position: absolute;
-        height: 40%;
-        bottom: 100px;
-        right: 100px;
-    }
 
     /* -----------------------------------動森快訊 CSS------------------------------------------- */
     /* 讓每張卡片佔滿自己的col  沒設會爆版 */
@@ -194,139 +42,105 @@
 
     /* 控制4張卡片的高度 */
 
-    .pading-block {
-        padding-top: 50px;
-    }
+    
 
-    .pading-block:nth-child(even) {
-        padding-top: 120px;
+    /* .pading-block:nth-child(even) {
+        padding-top: px;
 
-    }
-
-    /* -----------------------------------國家風情 CSS------------------------------------------- */
-    .photo-area {
-        width: 100%;
-        height: 100vh;
-        background-color: chocolate;
-
-    }
-
-    .photo1 {
-
-        width: 400px;
-        height: 220px;
-        background-color: cornflowerblue;
-    }
-
-
-    /*---------------------------------------------- footer CSS--------------------------------------------------*/
-
-    .footer-block {
-        width: 100%;
-        height: 500px;
-        background-color: grey;
-    }
-
-    .icon-group {
-        width: 100%;
-        height: 100%;
-        background-color: goldenrod;
-    }
-
-    .icon {
-        width: 50px;
-        height: 50px;
-        background-color: white;
-
-        text-align: center;
-        line-height: 50px;
-        font-size: 20px;
-    }
-
-    .info {
-        width: 100%;
-        height: 100%;
-        background-color: darkcyan;
-    }
-
-    @media(max-width: 575px) {
-        .footer-block {
-            height: unset;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .icon {
-            margin: auto;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
+    } */
 </style>
 
 
 
 <body>
-    <!------------------------------------------ BANNER------------------------------------------- -->
-    <section class="banner">
-        <div class="bg">
-            <div class="wave-position">
-                <div class="wave"></div>
-            </div>
-        </div>
-    </section>
+
     <!------------------------------------------ NAV------------------------------------------- -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <!-- LOGO -->
-                <a class="logo-top" href="">LOGO</a>
+        <div id="navGroup">
+            <nav class="navbar navbar-expand-md navbar-light fixed">
+                <div class="container">
+                    <div class="logo hover_photo"><img src="./img/logo.png" alt=""></div>
 
-                <!-- 漢堡條 -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent">
-                    <div class="hamberger"></div>
-                </button>
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="./img/logo_forest.png" alt="">
+                    </div>
 
-                <!-- LOGO右邊的整個NAV橫條 -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="">領養步驟</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">絕育計畫</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">動保修法</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">生命課程</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">關於我們</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">聯絡我們</a>
-                        </li>
-                    </ul>
+                    <!-- 漢堡條 -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <div class="navbar-nav mx-auto">
+                            <a class=" nav-item nav-link" href="#">保育與研究</a>
+                            <a class=" nav-item nav-link" href="#">知識學習</a>
+                            <a class=" nav-item nav-link" href="#">休閒遊憩</a>
+                            <a class=" nav-item nav-link" href="#">動森快訊</a>
+                            <a class=" nav-item nav-link" href="#">關於國家公園</a>
+                            <a class=" nav-item nav-link" href="#">公園風情</a>
+
+                            <!-- 看不懂的 class:disabled  tabindex="-1" aria-disabled="true"-->
+                            <!-- active：搭配in一起使用，表示這是一開始就要活動的頁面，如果沒有這個的話，網友一開始進到home這個頁面時也不會有任何內容。 -->
+                        </div>
+                    </div>
                 </div>
+            </nav>
+        </div>
 
+
+        </div>
+
+    </section>
+    <!------------------------------------------ BANNER------------------------------------------- -->
+    <section class="banner">
+        <!-- <div class="bg">
+            <div class="wave-position">
+                <div class="abc"></div>
+                <div class="wave"></div>
+                <div class="def"></div>
+            </div>
+        </div> -->
+
+        <div class="background">
+
+            <div class="textGroupTop">
+                <p>蘭花  相思樹 </p>
+                <p>流水  鳥鳴聲 </p>
+                <p>風與白雲搖曳 </p>
+                <p> 嘿嘿那魯灣豆，伊阿伊阿那魯灣</p>
             </div>
 
-        </nav>
+            <div class="textGroupBot">
+                <p>台灣疫情受到控制，</p>
+                <p>假日時不知該往何處去，</p>
+                <p>山區已成大家的首選， </p>
+                <p>因此我們決定 </p>
+                <p>幫助大家整理 </p>
+                <p>台灣的豐富森林遊樂資源！</p>
+            </div>
 
+            <div class="reveal"></div>
+        </div>
     </section>
     <!------------------------------------------ Taiwan------------------------------------------- -->
     <section class="taiwan">
-        <img class="taiwanPng" src="/img/taiwan01.png" alt="">
-        <a href=""> <img class="map-icon1  map-adjust" src="/img/map-icon.png" alt=""> </a>
-        <a href=""> <img class="map-icon2  map-adjust" src="/img/map-icon.png" alt=""> </a>
-        <img class="person" src="/img/person.png" alt="">
+        <a href="./googlemap.html"></a>
+
+
+        <div class="map">
+            <div class="park parkKD" data-number="0">墾丁國家公園</div>
+            <div class="park parkYS" data-number="1">玉山國家公園</div>
+            <div class="park parkYMS" data-number="2">陽明山國家公園</div>
+            <div class="park parkTLG" data-number="3">太魯閣國家公園</div>
+            <div class="park parkXB" data-number="4">雪霸國家公園</div>
+            <div class="park parkJM" data-number="5">金門國家公園</div>
+            <div class="park parkTJ" data-number="6">台江國家公園</div>
+            <div class="park parkPH" data-number="7">澎湖南方四島國家公園</div>
+            <div class="park parkDS" data-number="8">東沙環礁國家公園</div>
+        </div>
     </section>
     <!------------------------------------------ 動森快訊------------------------------------------- -->
     <section class="message">
@@ -334,108 +148,198 @@
             <div class="row">
                 <div class="area1 d-md-flex justify-content-around">
                     <!-- 4張卡片 -->
-                    <div class="col-12 col-md-3 pading-block ">
+                    <div class="col-12 col-md-6 pading-block ">
                         <div class="card ">
-                            <img class="card-img-area1" src="/img/0001jpg.jpg" alt="">
+                            <img class="card-img-area1" src="./img/新聞1.png" alt="">
                             <div class="card-body">
                                 <div class="card-text text-center">
-                                    <h1>我是卡片</h1>
-                                    <p>我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容</p>
+                                    <h4>水上高腳屋「台江學園」入圍世界建築獎</h4>
+                                    <p>台江國家公園行政中心及遊客中心（台江學園），建
+                                        築結合台江魚塭濕地特色，採「高腳屋」的構造形式，為
+                                        南部行政機關第一座鑽石級的綠建築...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3 pading-block">
+                    <div class="col-12 col-md-6 pading-block">
                         <div class="card">
-                            <img class="card-img-area1" src="/img/0001jpg.jpg" alt="">
+                            <img class="card-img-area1" src="./img/新聞2.png" alt="">
                             <div class="card-body">
                                 <div class="card-text text-center">
-                                    <h1>我是卡片</h1>
-                                    <p>我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容</p>
+                                    <h4>觀霧地標「霧社櫻王」開花了！</h4>
+                                    <h4>雪白猶如三月雪</h4>
+                                    <p>位於雪霸國家公園觀霧遊憩區觀霧山莊前有一株大櫻
+                                        花，被稱為「霧社櫻王」由於這株櫻花是野生的台灣...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3 pading-block">
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="area1 d-md-flex justify-content-around">
+                    <div class="col-12 col-md-6 pading-block">
                         <div class="card">
-                            <img class="card-img-area1" src="/img/0001jpg.jpg" alt="">
+                            <img class="card-img-area1" src="./img/新聞3.png" alt="">
                             <div class="card-body">
                                 <div class="card-text text-center">
-                                    <h1>我是卡片</h1>
-                                    <p>我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容</p>
+                                    <h4>海芋季提前盛開！雪白花海襲捲陽明山   </h4>
+                                    <p>一年一度的陽明山竹子湖海芋季月底登場，今年受氣
+                                        候影響，海芋正是盛開期，清新脫俗的白色海芋海，再加
+                                        上雲霧繚繞的氣候，讓竹子湖增添不少美感...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-3 pading-block ">
+                    <div class="col-12 col-md-6 pading-block ">
                         <div class="card">
-                            <img class="card-img-area1" src="/img/0001jpg.jpg" alt="">
+                            <img class="card-img-area1" src="./img/新聞4.png" alt="">
                             <div class="card-body">
                                 <div class="card-text text-center">
-                                    <h1>我是卡片</h1>
-                                    <p>我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容我們式卡片的一大堆內容</p>
+                                    <h4>玉山國家公園35周年！ </h4>
+                                    <h4>為台灣留下一座高山型國家公園 </h4>
+
+                                    <p>玉山國家公園設處35年了，不但台灣陸域面積最大的
+                                        國家公園，更有東亞最高峰的「玉山」...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <!------------------------------------------ 國家風情------------------------------------------- -->
     <section class="nationalStyle">
-        <div class="container">
-            <div class="photo-area d-flex justify-content-around flex-wrap">
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-                <div class="photo1"></div>
-
-
+        <div class="content_col_1">
+            <div class=" pic-1">
+                <img src="./img/風景_1.png" alt="">
+            </div>
+            <div class=" pic-2">
+                <img src="./img/風景_2.png" alt="">
             </div>
         </div>
+
+        <div class="content_col_2">
+            <div class=" pic-3">
+                <img src="./img/風景_3.png" alt="">
+            </div>
+            <div class=" pic-4">
+                <img src="./img/風景_4.png" alt="">
+            </div>
+        </div>
+
+        <div class="content_col_3">
+            <div class="content_col_3_top">
+                <div class=" pic-5">
+                    <img src="./img/風景_5.png" alt="">
+                </div>
+                <div class=" pic-6">
+                    <img src="./img/風景_6.png" alt="">
+                </div>
+            </div>
+
+            <div class="content_col_3_bot">
+                <div class="pic-7">
+                    <img src="./img/風景_7.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="content_col_4">
+            <div class="pic-8">
+                <img src="./img/風景_8.png" alt="">
+
+            </div>
+            <div class="pic-9">
+                <img src="./img/風景_9.png" alt="">
+            </div>
+        </div>
+
+
+
     </section>
 
 
     <!-- ----------------------------------------------------footer------------------------------------------------------------ -->
-    <footer>
-        <div class="row">
-            <div class="footer-block d-sm-flex justify-content-around align-items-center">
-                <div class="col-12 col-sm-3">
-                    <div class="icon-group d-flex justify-content-around">
-                        <div class="icon">icon</div>
-                        <div class="icon">icon</div>
-                        <div class="icon">icon</div>
+
+    <!--========== footer ==========  -->
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-0">
+                    <div class="sociaBtn">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3">
-                    <div class="info text-center d-">
-                        <p>qqqqqqqqqqqq</p>
-                        <p>qqqqqqqqqqqq</p>
-                        <p>qqqqqqqqqqqq</p>
-                        <p>qqqqqqqqqqqq</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                    <div class="info text-center">
-                        <p>sssssssssss</p>
-                        <p>sssssssssss</p>
-                        <p>sssssssssss</p>
-                        <p>sssssssssss</p>
-                    </div>
+                <div class="col-12 col-md-6 order-0 order-md-1 d-flex align-items-center">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">知識學習</a>
+                            </li>
+                            <li>
+                                <a href="">休閑游憩</a>
+                            </li>
+                            <li>
+                                <a href="">保育與研究</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">動森快訊</a>
+                            </li>
+                            <li>
+                                <a href="">公園風情</a>
+                            </li>
+                            <li>
+                                <a href="">爲您服務</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="">關於國家公園</a>
+                            </li>
+                        </ul>
+
+                    </nav>
                 </div>
             </div>
         </div>
-    </footer>
-
+    </section>
 
 
 
@@ -462,44 +366,120 @@
 
     <!-- Swiper 初始化-->
     <script>
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            loop: true,
-            freeMode: true,
-            loopedSlides: 5, //looped slides should be the same
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 5, //looped slides should be the same
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            thumbs: {
-                swiper: galleryThumbs,
-            },
+        // nav 漢堡條特效
+        $("#toggle").click(function () {
+            $(this).toggleClass("on");
+            // $("#navbarText").slideToggle();
         });
 
 
-        (function () {
+        // // Ethan的薄雲見霧效果
+        // (function () {
 
-            var banner = document.querySelector('.banner')
-            $(banner).mousemove(function (e) {
-                // console.log(e);
-                // console.log("x" + e.pageX + " " + "y" + e.pageY);
-                var mx = e.pageX;
-                var my = e.pageY;
-                // $('.wave-position').css({ top: my, left: mx });
+        //     var banner = document.querySelector('.banner')
+        //     $('.banner').mousemove(function (e) {
+        //         // console.log(e);
+        //         // console.log("x" + e.pageX + " " + "y" + e.pageY);
+        //         var mx = e.pageX;
+        //         var my = e.pageY;
+        //         // $('.wave-position').css({ top: my, left: mx });
 
-                // 去改變點的位置為滑鼠的yx座標
-                $('.wave-position').css("left", mx).css("top", my);
+        //         // 去改變點的位置為滑鼠的yx座標
+        //         $('.wave-position').css("left", mx).css("top", my);
+        //     });
+        // })();
+
+        
+          //CODEPEN複製的撥云見霧效果
+          $(document).ready(function () {
+            var $reveal = $(".reveal"),
+                revealWHalf = $reveal.width() / 2;
+            $(document).on("mousemove", function (e) {
+                $reveal.css({ "left": e.pageX - revealWHalf, "top": e.pageY - revealWHalf });
             });
-        })();
+        });
 
+
+        //////////////////////////////////////////////////////////
+        // 台灣地圖
+
+        var park_info = [{
+            name: '垦丁國家公園',
+            introduce: '墾丁國家公園是台灣在戰後時期第一個成立的國家公園，成立於1984年，隸屬內政部營建署，下設管理處，為台灣享譽國內外的熱門觀光勝地之一.',
+            link: "./googlemap.html",
+        },
+        {
+            name: '玉山國家公園',
+            introduce: '玉山國家公園是中華民國第二座國家公園，前身為日治時期成立之新高阿里山國立公園（1937–1945）.',
+            link: "./googlemap2.html",
+        },
+        {
+            name: '陽明山國家公園',
+            introduce: '陽明山國家公園是中華民國設置的第三個國家公園，由內政部營建署管轄，前身為臺灣日治時期成立之大屯國立公園（1937-1945）.',
+            link: "./googlemap3.html",
+        },
+        {
+            name: '太鲁阁國家公園',
+            introduce: '太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之次高太魯閣國立公園（1937～1945）.',
+            link: "./googlemap4.html",
+        },
+        {
+            name: '雪霸國家公園',
+            introduce: '雪霸國家公園是臺灣第五座國家公園，可溯至日治時期成立之次高太魯閣國立公園，以雪山和大霸尖山的「雪」、「霸」兩字命名.',
+            link: "./googlemap5.html",
+        },
+        {
+            name: '金门國家公園',
+            introduce: '金門國家公園位於金門縣，為中華民國第六座國家公園，1995年5月25日公告計畫，1995年10月18日成立管理處，是首座位於離島的國家公園.',
+            link: "./googlemap6.html",
+        },
+        {
+            name: '台江國家公園',
+            introduce: '台江國家公園，為中華民國第八座國家公園，也是首座都市型國家公園，2009年12月28日正式掛牌成立.',
+            link: "./googlemap7.html",
+        },
+        {
+            name: '澎湖南方四島國家公園',
+            introduce: '澎湖南方四島國家公園為中華民國內政部營建署海洋國家公園管理處自2010年開始籌設的國家公園，於2014年6月8日正式公告實施，並於10月18日掛牌.',
+            link: "./googlemap8.html",
+        },
+        {
+            name: '東沙環礁國家公園',
+            introduce: '東沙環礁國家公園為中華民國第七座國家公園、第一座海洋國家公園，隸屬中華民國內政部營建署，於2007年1月17日成立，並於該年的10月4日成立海洋國家公園.',
+            link: "./googlemap9.html",
+        },
+
+        ]
+
+        var parks = document.querySelectorAll('.park');
+
+        parks.forEach(function (park) {
+            park.onclick = function () {
+
+
+                var contents = document.querySelectorAll('.content')
+                contents.forEach(function (content) {
+                    content.classList.remove('active')
+                })
+
+
+                index = park.getAttribute('data-number');
+                data = park_info[index]
+
+                park.innerHTML += `
+                <div class="content active">
+
+                    <h2>${data.name}</h2>
+
+                    <p>${data.introduce}</p>
+
+                    <a href="${data.link}" target="_blank">READ MORE</a>
+
+                </div>
+                `
+
+            }
+        })
     </script>
 
 </body>

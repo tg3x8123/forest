@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content_col_1 {
+  margin-right: 15px;
+  width: 14.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content_col_1 .pic-1 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .content_col_1 .pic-1 img {
+  width: 100%;
+}
+
+.container .content_col_1 .pic-2 {
+  width: 100%;
+}
+
+.container .content_col_1 .pic-2 img {
+  width: 100%;
+}
+
+.container .content_col_2 {
+  margin-right: 15px;
+  width: 20.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content_col_2 .pic-3 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .content_col_2 .pic-3 img {
+  width: 100%;
+}
+
+.container .content_col_2 .pic-4 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .content_col_2 .pic-4 img {
+  width: 100%;
+}
+
+.container .content_col_3 {
+  margin-right: 15px;
+  width: 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content_col_3 .content_col_3_top {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content_col_3 .content_col_3_top .pic-5 {
+  width: 34%;
+  margin-right: 10px;
+}
+
+.container .content_col_3 .content_col_3_top .pic-5 img {
+  width: 100%;
+}
+
+.container .content_col_3 .content_col_3_top .pic-6 {
+  width: 65%;
+}
+
+.container .content_col_3 .content_col_3_top .pic-6 img {
+  width: 100%;
+}
+
+.container .content_col_3 .content_col_3_bot {
+  height: 65%;
+}
+
+.container .content_col_3 .content_col_3_bot .pic-7 {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.container .content_col_3 .content_col_3_bot .pic-7 img {
+  width: 100%;
+}
+
+.container .content_col_4 {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content_col_4 .pic-8 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .content_col_4 .pic-8 img {
+  width: 100%;
+}
+
+.container .content_col_4 .pic-9 {
+  width: 100%;
+}
+
+.container .content_col_4 .pic-9 img {
+  width: 100%;
+}
+/*# sourceMappingURL=photo.css.map */
