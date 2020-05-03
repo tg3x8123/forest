@@ -135,13 +135,15 @@ html {
             color: white;
             text-shadow: black 0.1em 0.1em 0.2em;
             z-index: 10;
-            top: 100px;
+            top: 200px;
             left: 220px;
             font-weight: 600;
-            font-family: "MyCustomFont-Ngaan";  
+            font-family: 標楷體;  
             letter-spacing: 20px;
     
-    
+            p{
+                font-family: 標楷體; 
+            }
     
         }
     
@@ -212,7 +214,7 @@ html {
 .nav-item{
     color: #0c007c !important;
     // text-shadow: gray 0.05em 0.05em 0.05em;
-    
+    // 
 
 }
 

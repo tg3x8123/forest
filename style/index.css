@@ -62,11 +62,15 @@ html {
   color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
   z-index: 10;
-  top: 100px;
+  top: 200px;
   left: 220px;
   font-weight: 600;
-  font-family: "MyCustomFont-Ngaan";
+  font-family: 標楷體;
   letter-spacing: 20px;
+}
+
+.banner .background .textGroupTop p {
+  font-family: 標楷體;
 }
 
 .banner .background .textGroupBot {
